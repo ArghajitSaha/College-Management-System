@@ -13,7 +13,10 @@
       src="https://kit.fontawesome.com/ae360af17e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/College-Management-System-main/Teacher/all-teacher.css">
+    <link
+      rel="stylesheet"
+      href="/College-Management-System-main/Teacher/all-teacher.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -36,61 +39,132 @@
           </div>
           <ul class="sidebar-nav">
             <li class="sidebar-item">
-                <a id="dashboard-id" href="#" class="sidebar-link">
-                    <i class="fa-solid fa-list pe-2" id="nameic"></i>
-                    Dashboard
-                </a>
+              <a id="dashboard-id" href="#" class="sidebar-link">
+                <i class="fa-solid fa-list pe-2" id="nameic"></i>
+                Dashboard
+              </a>
             </li>
             <li id="MIS-id" class="sidebar-item">
-                <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" aria-expanded="false">
-                    <i class="fa-solid fa-file-lines pe-2" id="nameic"></i>
-                    &nbsp;MIS Report
-                </a>
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-target="#pages"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-file-lines pe-2" id="nameic"></i>
+                &nbsp;MIS Report
+              </a>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link collapsed" data-bs-target="#student" data-bs-toggle="collapse" aria-expanded="false">
-                    <i class="fa-solid fa-sliders pe-2" id="nameic"></i>
-                    Manage Staff
-                </a>
-                <ul id="student" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-target="#student"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-sliders pe-2" id="nameic"></i>
+                Manage Staff
+              </a>
+              <ul
+                id="student"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a
+                    href="#"
+                    class="sidebar-link collapsed"
+                    data-bs-target="#teacher-list"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-chalkboard-user pe-2" id="nameic"></i>
+                    Teachers
+                  </a>
+                  <ul
+                    id="teacher-list"
+                    class="sidebar-dropdown list-unstyled collapse show"
+                    data-bs-parent="#student"
+                  >
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#teacher-list" data-bs-toggle="collapse" aria-expanded="false">
-                            <i class="fa-solid fa-chalkboard-user pe-2" id="nameic"></i>
-                            Teachers
-                        </a>
-                        <ul id="teacher-list" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#student">
-                            <li class="sidebar-item">
-                                <a id="all-teacher-id" href="#" class="sidebar-link" id="nameic">All Teachers</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a id="add-teacher-id" href="#" class="sidebar-link" id="nameic">Add Teacher</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a id="edit-teacher-id" href="#" class="sidebar-link" id="nameic">Edit Teacher</a>
-                            </li>
-                        </ul>
+                      <a
+                        id="all-teacher-id"
+                        href="#"
+                        class="sidebar-link"
+                        id="nameic"
+                        >All Teachers</a
+                      >
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#receptionist-list" data-bs-toggle="collapse" aria-expanded="false">
-                            <i class="fa-solid fa-chalkboard-user pe-2" id="nameic"></i>
-                            Receptionist
-                        </a>
-                        <ul id="receptionist-list" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#student">
-                            <li class="sidebar-item">
-                                <a id="all-receptionist-id" href="#" class="sidebar-link" id="nameic">All Receptionist</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a id="add-receptionist-id" href="#" class="sidebar-link" id="nameic">Add Receptionist</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a id="edit-receptionist-id" href="#" class="sidebar-link" id="nameic">Edit Receptionist</a>
-                            </li>
-                        </ul>
+                      <a
+                        id="add-teacher-id"
+                        href="#"
+                        class="sidebar-link"
+                        id="nameic"
+                        >Add Teacher</a
+                      >
                     </li>
-                </ul>
+                    <li class="sidebar-item">
+                      <a
+                        id="edit-teacher-id"
+                        href="#"
+                        class="sidebar-link"
+                        id="nameic"
+                        >Edit Teacher</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar-item">
+                  <a
+                    href="#"
+                    class="sidebar-link collapsed"
+                    data-bs-target="#receptionist-list"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-chalkboard-user pe-2" id="nameic"></i>
+                    Receptionist
+                  </a>
+                  <ul
+                    id="receptionist-list"
+                    class="sidebar-dropdown list-unstyled collapse show"
+                    data-bs-parent="#student"
+                  >
+                    <li class="sidebar-item">
+                      <a
+                        id="all-receptionist-id"
+                        href="#"
+                        class="sidebar-link"
+                        id="nameic"
+                        >All Receptionist</a
+                      >
+                    </li>
+                    <li class="sidebar-item">
+                      <a
+                        id="add-receptionist-id"
+                        href="#"
+                        class="sidebar-link"
+                        id="nameic"
+                        >Add Receptionist</a
+                      >
+                    </li>
+                    <li class="sidebar-item">
+                      <a
+                        id="edit-receptionist-id"
+                        href="#"
+                        class="sidebar-link"
+                        id="nameic"
+                        >Edit Receptionist</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-        
-            <li class="sidebar-item"> 
+
+            <li class="sidebar-item">
               <a
                 id="notice-id"
                 href="#"
@@ -181,356 +255,1589 @@
               </div>
             </div>
             <!-- Table Element -->
-            <div class="card border-0">
-              <div class="card-header">
-                <h5 class="card-title">Available Teachers</h5>
-                <h6 class="card-subtitle text-muted">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum ducimus, necessitatibus reprehenderit itaque!
-                </h6>
-              </div>
-              <div class="card-body">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Subject</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>Math</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>English</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>Assamese</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
           </div>
           <!-- For MIS Report -->
           <div id="main-1" class="container-fluid">
+            <style>
+              @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap");
 
+              * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: poppins, sans-serif;
+              }
+              html,
+              body {
+                height: 100%;
+                width: 100%;
+              }
+              body {
+                margin: 0;
+                padding: 0;
+              }
+
+              .filter {
+                font-size: 13px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                gap: 2vw;
+                /* background-color: rgb(219, 219, 255); */
+                background-image: linear-gradient(
+                  to top,
+                  #afd3d9 0%,
+                  #b2f7ff 100%
+                );
+                width: 100%;
+              }
+
+              .filter select,
+              .filter input {
+                padding: 2px;
+                margin-right: 10px;
+                width: 10vw;
+                height: 2.3vw;
+                border: 2px solid #b3b3b3;
+                border-radius: 5px;
+                box-shadow: 1px 4px 2px #aaaaaa;
+              }
+
+              .filter button {
+                width: 10vw;
+                height: 2.3vw;
+                background-color: blue;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                font-size: 14px;
+              }
+              .filter button:active {
+                background-color: rgb(0, 0, 199);
+                transition: 0.2s;
+                letter-spacing: 1px;
+              }
+
+              table {
+                border-collapse: collapse;
+                width: 100%;
+                padding: 4px;
+              }
+              th {
+                height: 0.5vw;
+                /* background-image: linear-gradient(to top, #a5cff8 0%, rgb(233, 238, 255) 100%); */
+              }
+
+              th,
+              td {
+                border: 2px solid rgb(171, 171, 171);
+                padding: 4px;
+                text-align: center;
+                /* background-color: rgb(255, 255, 255); */
+              }
+
+              .modal {
+                display: none;
+                position: absolute;
+                z-index: 1;
+                background-color: #fefefe;
+                margin-top: -5%;
+                margin-left: 70%;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 22vw;
+                height: 6vw;
+                border: none;
+                border-radius: 10px;
+                box-shadow: -5px 5px 50px #1d1b1b;
+              }
+
+              /* Close button styles */
+              .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+              }
+
+              .close:hover,
+              .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+              }
+
+              .tableCont {
+                width: 100%;
+                height: fit-content;
+              }
+              /* Media for 650px */
+              @media only screen and (max-width: 650px) and (min-width: 100px) {
+                .filter .month #monthDropdown,
+                #yearDropdown,
+                #courseDropdown,
+                #projectDropdown,
+                .search button {
+                  /* background-color: red; */
+                  height: 30px;
+                  width: 100%;
+                }
+                .tableCont {
+                  height: fit-content;
+                  overflow-x: scroll;
+                }
+                .filter {
+                  text-align: center;
+                  background-image: linear-gradient(
+                    to top,
+                    #c2c1f9 0%,
+                    #b2f7ff 100%
+                  );
+                }
+                .filter .month,
+                .year,
+                .course,
+                .project,
+                .search {
+                  width: 80px;
+                  height: 100px;
+                }
+
+                .filter .search button {
+                  width: 70px;
+                  background-color: blue;
+                  color: white;
+                  font-size: 8px;
+                }
+                .filter .search {
+                  display: flex;
+                  align-items: end;
+                  padding-bottom: 10px;
+                }
+                .filter .search button {
+                  box-shadow: 1px 4px 2px #aaaaaa;
+                }
+
+                .modal {
+                  display: none;
+                  position: absolute;
+                  z-index: 1;
+                  background-color: #fefefe;
+                  margin-top: -55%;
+                  margin-left: 20%;
+                  margin-right: -30%;
+                  padding: 20px;
+                  border: 1px solid #888;
+                  width: 60%;
+                  height: 15%;
+                  border: none;
+                  border-radius: 10px;
+                  box-shadow: -5px 5px 50px #1d1b1b;
+                }
+
+                /* Close button styles */
+                .close {
+                  color: #aaa;
+                  float: right;
+                  font-size: 10px;
+                  font-weight: bold;
+                }
+
+                .close:hover,
+                .close:focus {
+                  color: black;
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+              }
+            </style>
+
+            <div class="filter">
+              <!-- Month Input -->
+              <div class="month">
+                <label for="month"
+                  ><h4>Select Month:</h4>
+                  <br
+                /></label>
+                <select id="monthDropdown">
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </div>
+              <!-- Year Input -->
+              <div class="year">
+                <label for="year"
+                  ><h4>Select Year:</h4>
+                  <br
+                /></label>
+                <select id="yearDropdown">
+                  <!-- JavaScript will populate this dropdown -->
+                </select>
+              </div>
+              <!-- Courses Inputs -->
+              <div class="course">
+                <label for="course"
+                  ><h4>Select Course:</h4>
+                  <br
+                /></label>
+                <select id="courseDropdown">
+                  <!-- All Courses -->
+                  <option value="bca">BCA</option>
+                  <option value="mca">MCA</option>
+                  <option value="pgdca">PGDCA</option>
+                  <!-- Add more courses here -->
+                </select>
+              </div>
+              <!-- Project Inputs -->
+              <div class="project">
+                <label for="project"
+                  ><h4>Select Project:</h4>
+                  <br
+                /></label>
+                <select id="projectDropdown">
+                  <!-- All Projects -->
+                  <option value="1">Project 1</option>
+                  <option value="2">Project 2</option>
+                  <option value="3">Project 3</option>
+                  <option value="4">Project 4</option>
+                  <option value="5">Project 5</option>
+                  <option value="6">Project 6</option>
+                  <!-- Add more projects here -->
+                </select>
+              </div>
+
+              <div class="search">
+                <br />
+                <button><h4>Search</h4></button>
+              </div>
+            </div>
+            <div class="tableCont">
+              <table #table border="2">
+                <tr>
+                  <th rowspan="2"><h4>Sl. No.</h4></th>
+                  <th rowspan="2"><h4>Course</h4></th>
+                  <th rowspan="2"><h4>Project</h4></th>
+                  <th colspan="2"><h4>SC</h4></th>
+                  <th colspan="2"><h4>ST</h4></th>
+                  <th colspan="2"><h4>OBC</h4></th>
+                  <th colspan="2"><h4>GEN</h4></th>
+                  <th colspan="2"><h4>Other</h4></th>
+                  <th colspan="2"><h4>Sub Total</h4></th>
+                  <th rowspan="2"><h4>Total</h4></th>
+                  <th rowspan="2"><h4>Action</h4></th>
+                </tr>
+                <tr>
+                  <th><h5>Male</h5></th>
+                  <th><h5>Female</h5></th>
+                  <th><h5>Male</h5></th>
+                  <th><h5>Female</h5></th>
+                  <th><h5>Male</h5></th>
+                  <th><h5>Female</h5></th>
+                  <th><h5>Male</h5></th>
+                  <th><h5>Female</h5></th>
+                  <th><h5>Male</h5></th>
+                  <th><h5>Female</h5></th>
+                  <th><h5>Male</h5></th>
+                  <th><h5>Female</h5></th>
+                </tr>
+                <!-- BCA Data -->
+                <tr class="for_bca">
+                  <td class="sl_no">1.</td>
+                  <td class="course">BCA</td>
+                  <td class="project">No. of Projects</td>
+                  <td class="sc_male">10</td>
+                  <td class="sc_female">10</td>
+                  <td class="st_male">7</td>
+                  <td class="st_female">3</td>
+                  <td class="obc_male">4</td>
+                  <td class="obc_female">6</td>
+                  <td class="gen_male">7</td>
+                  <td class="gen_femala">4</td>
+                  <td class="other_male">3</td>
+                  <td class="other_female">7</td>
+                  <td class="bca_total_male" id="bca_total_male"></td>
+                  <td class="bca_total_female" id="bca_total_female"></td>
+                  <td class="total" id="total"></td>
+                  <td class="download_bca_data">
+                    <h6>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="openDownloadModal('bca')"
+                        >Download</a
+                      >
+                    </h6>
+                  </td>
+                </tr>
+                <!-- MCA Data -->
+                <tr class="for_mca">
+                  <td class="sl_no">2.</td>
+                  <td class="course">MCA</td>
+                  <td class="project">No. of Projects</td>
+                  <td class="sc_male">5</td>
+                  <td class="sc_female">6</td>
+                  <td class="st_male">6</td>
+                  <td class="st_female">7</td>
+                  <td class="obc_male">6</td>
+                  <td class="obc_female">2</td>
+                  <td class="gen_male">5</td>
+                  <td class="gen_femala">9</td>
+                  <td class="other_male">9</td>
+                  <td class="other_female">3</td>
+                  <td class="mca_total_male" id="mca_total_male"></td>
+                  <td class="mca_total_female" id="mca_total_female"></td>
+                  <td class="mca_total" id="mca_total"></td>
+                  <td class="Download_mca_data">
+                    <h6>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="openDownloadModal('mca')"
+                        >Download</a
+                      >
+                    </h6>
+                  </td>
+                </tr>
+
+                <!-- PGDCA Data -->
+                <tr class="for_pgdca">
+                  <td class="sl_no">3.</td>
+                  <td class="course">PGDCA</td>
+                  <td class="project">No. of Projects</td>
+                  <td class="sc_male">7</td>
+                  <td class="sc_female">2</td>
+                  <td class="st_male">9</td>
+                  <td class="st_female">4</td>
+                  <td class="obc_male">4</td>
+                  <td class="obc_female">8</td>
+                  <td class="gen_male">9</td>
+                  <td class="gen_female">5</td>
+                  <td class="other_male">4</td>
+                  <td class="other_female">8</td>
+                  <td class="pgdca_total_male" id="pgdca_total_male"></td>
+                  <td class="pgdca_total_female" id="pgdca_total_female"></td>
+                  <td class="pgdca_total" id="pgdca_total"></td>
+                  <td class="Download_pgdca_data">
+                    <h6>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="openDownloadModal('pgdca')"
+                        >Download</a
+                      >
+                    </h6>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Modal for download options -->
+            <div id="downloadModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeDownloadModal()"
+                  >&times;</span
+                >
+                <p>Select the format for download:</p>
+                <button onclick="downloadData('pdf')">Download as PDF</button>
+                <button onclick="downloadData('xls')">Download as XLS</button>
+              </div>
+            </div>
+            <script>
+              function populateYearDropdown() {
+                var dropdown = document.getElementById("yearDropdown");
+                var currentYear = new Date().getFullYear();
+
+                for (var year = 1950; year <= currentYear; year++) {
+                  var option = document.createElement("option");
+                  option.value = year;
+                  option.text = year;
+                  dropdown.add(option);
+                }
+              }
+              // Call the function to populate the year dropdown when the page loads
+              window.onload = populateYearDropdown;
+
+              // FOR BCA
+              var bca_sc_male = parseInt(
+                document.querySelector(".for_bca .sc_male").innerText
+              );
+              var bca_st_male = parseInt(
+                document.querySelector(".for_bca .st_male").innerText
+              );
+              var bca_obc_male = parseInt(
+                document.querySelector(".for_bca .obc_male").innerText
+              );
+              var bca_gen_male = parseInt(
+                document.querySelector(".for_bca .gen_male").innerText
+              );
+              var bca_other_male = parseInt(
+                document.querySelector(".for_bca .other_male").innerText
+              );
+
+              var bca_sc_female = parseInt(
+                document.querySelector(".for_bca .sc_female").innerText
+              );
+              var bca_st_female = parseInt(
+                document.querySelector(".for_bca .st_female").innerText
+              );
+              var bca_obc_female = parseInt(
+                document.querySelector(".for_bca .obc_female").innerText
+              );
+              var bca_gen_female = parseInt(
+                document.querySelector(".for_bca .gen_femala").innerText
+              );
+              var bca_other_female = parseInt(
+                document.querySelector(".for_bca .other_female").innerText
+              );
+
+              var bca_total_male =
+                bca_sc_male +
+                bca_st_male +
+                bca_obc_male +
+                bca_gen_male +
+                bca_other_male;
+              var bca_total_female =
+                bca_sc_female +
+                bca_st_female +
+                bca_obc_female +
+                bca_gen_female +
+                bca_other_female;
+              var bca_total = bca_total_male + bca_total_female;
+
+              document.getElementById("bca_total_male").innerText =
+                bca_total_male;
+              document.getElementById("bca_total_female").innerText =
+                bca_total_female;
+              document.getElementById("total").innerText = bca_total;
+
+              // FOR MCA
+              var mca_sc_male = parseInt(
+                document.querySelector(".for_mca .sc_male").innerText
+              );
+              var mca_st_male = parseInt(
+                document.querySelector(".for_mca .st_male").innerText
+              );
+              var mca_obc_male = parseInt(
+                document.querySelector(".for_mca .obc_male").innerText
+              );
+              var mca_gen_male = parseInt(
+                document.querySelector(".for_mca .gen_male").innerText
+              );
+              var mca_other_male = parseInt(
+                document.querySelector(".for_mca .other_male").innerText
+              );
+
+              var mca_sc_female = parseInt(
+                document.querySelector(".for_mca .sc_female").innerText
+              );
+              var mca_st_female = parseInt(
+                document.querySelector(".for_mca .st_female").innerText
+              );
+              var mca_obc_female = parseInt(
+                document.querySelector(".for_mca .obc_female").innerText
+              );
+              var mca_gen_female = parseInt(
+                document.querySelector(".for_mca .gen_femala").innerText
+              );
+              var mca_other_female = parseInt(
+                document.querySelector(".for_mca .other_female").innerText
+              );
+
+              var mca_total_male =
+                mca_sc_male +
+                mca_st_male +
+                mca_obc_male +
+                mca_gen_male +
+                mca_other_male;
+              var mca_total_female =
+                mca_sc_female +
+                mca_st_female +
+                mca_obc_female +
+                mca_gen_female +
+                mca_other_female;
+              var mca_total = mca_total_male + mca_total_female;
+
+              document.getElementById("mca_total_male").innerText =
+                mca_total_male;
+              document.getElementById("mca_total_female").innerText =
+                mca_total_female;
+              document.getElementById("mca_total").innerText = mca_total;
+
+              // FOR PGDCA
+              var pgdca_sc_male = parseInt(
+                document.querySelector(".for_pgdca .sc_male").innerText
+              );
+              var pgdca_st_male = parseInt(
+                document.querySelector(".for_pgdca .st_male").innerText
+              );
+              var pgdca_obc_male = parseInt(
+                document.querySelector(".for_pgdca .obc_male").innerText
+              );
+              var pgdca_gen_male = parseInt(
+                document.querySelector(".for_pgdca .gen_male").innerText
+              );
+              var pgdca_other_male = parseInt(
+                document.querySelector(".for_pgdca .other_male").innerText
+              );
+
+              var pgdca_sc_female = parseInt(
+                document.querySelector(".for_pgdca .sc_female").innerText
+              );
+              var pgdca_st_female = parseInt(
+                document.querySelector(".for_pgdca .st_female").innerText
+              );
+              var pgdca_obc_female = parseInt(
+                document.querySelector(".for_pgdca .obc_female").innerText
+              );
+              var pgdca_gen_female = parseInt(
+                document.querySelector(".for_pgdca .gen_female").innerText
+              );
+
+              var pgdca_other_female = parseInt(
+                document.querySelector(".for_pgdca .other_female").innerText
+              );
+
+              var pgdca_total_male =
+                pgdca_sc_male +
+                pgdca_st_male +
+                pgdca_obc_male +
+                pgdca_gen_male +
+                pgdca_other_male;
+              var pgdca_total_female =
+                pgdca_sc_female +
+                pgdca_st_female +
+                pgdca_obc_female +
+                pgdca_gen_female +
+                pgdca_other_female;
+              var pgdca_total = pgdca_total_male + pgdca_total_female;
+
+              document.getElementById("pgdca_total_male").innerText =
+                pgdca_total_male;
+              document.getElementById("pgdca_total_female").innerText =
+                pgdca_total_female;
+              document.getElementById("pgdca_total").innerText = pgdca_total;
+
+              // Open the download options modal
+              function openDownloadModal(course) {
+                document.getElementById("downloadModal").style.display =
+                  "block";
+                // You can pass the course parameter to identify which row is being downloaded
+                // and customize the download accordingly
+                // For now, I'm just alerting the course for demonstration
+                // alert("Downloading data for " + course);
+              }
+
+              // Close the download options modal
+              function closeDownloadModal() {
+                document.getElementById("downloadModal").style.display = "none";
+              }
+
+              // Trigger the download based on the selected format
+              function downloadData(format) {
+                // You can implement the download logic here based on the format
+                // For now, I'm just alerting the selected format
+                alert("Downloading data in " + format + " format");
+                closeDownloadModal(); // Close the modal after download
+              }
+            </script>
           </div>
           <!-- For All Teachers -->
           <div id="main-2-1-1" class="container-fluid">
             <nav class="search-nav">
-              <input class="input" type="text" id="teacherId" placeholder="Teacher ID">
-              <input class="input" type="text" id="teacherName" placeholder="Teacher Name">
-              <select class="input" id="subject" class="subject" name="subject" required>
-                  <option disabled selected>Select Subject</option>
-                  <option value="math">Math</option>
-                  <option value="science">Science</option>
-                  <option value="Hindi">Hindi</option>
-                  <option value="Social">Social Studies</option>
-                  <option value="English">English</option>
-                  <option value="assamese">Assamese</option>
+              <input
+                class="input"
+                type="text"
+                id="teacherId"
+                placeholder="Teacher ID"
+              />
+              <input
+                class="input"
+                type="text"
+                id="teacherName"
+                placeholder="Teacher Name"
+              />
+              <select
+                class="input"
+                id="subject"
+                class="subject"
+                name="subject"
+                required
+              >
+                <option disabled selected>Select Subject</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Social">Social Studies</option>
+                <option value="English">English</option>
+                <option value="assamese">Assamese</option>
               </select>
-              <button class="input" id="searchButton" onclick="searchTeachers()">Search</button>
+              <button
+                class="input"
+                id="searchButton"
+                onclick="searchTeachers()"
+              >
+                Search
+              </button>
             </nav>
             <div class="all-teacher-heading">
-                <h2>All Teachers</h2>
+              <h2>All Teachers</h2>
             </div>
-  
+
             <div class="all-teachers">
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-          
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-          
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-          
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-          
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-          
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-  
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-          
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-          
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-          
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-          
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-  
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-          
+
               <div class="teacher">
-                  <div class="option">
-                      <button><h6>View</h6></button>
-                      <button><h6>Update</h6></button>
-                      <button><h6>Remove</h6></button>
-                  </div>
-                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
-                  <h3>Teacher Name</h3>
-                  <h5>Subject</h5>
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-  
-            <script>
+
+              <script>
                 function searchTeachers() {
-                    // Add your search functionality here
-                    // You can use JavaScript to handle the search based on the entered values
-                    // For example, you might want to make an AJAX request to the server for searching.
-                    // This is just a placeholder function.
-                    alert("Searching for teachers...");
+                  // Add your search functionality here
+                  // You can use JavaScript to handle the search based on the entered values
+                  // For example, you might want to make an AJAX request to the server for searching.
+                  // This is just a placeholder function.
+                  alert("Searching for teachers...");
                 }
-            </script>
-  
+              </script>
             </div>
           </div>
-            
+
           <!-- For Add Teacher -->
           <div id="main-2-1-2" class="container-fluid">
-            <div class="card border-0">
-              <div class="card-header">
-                <h5 class="card-title">Add Teacher</h5>
-              </div>
-              <div class="card-body">
-                <form id="add-teacher-form">
-                  <div class="form-group">
-                    <label for="teacher-name">Name:</label>
-                    <input type="text" class="form-control" id="teacher-name" />
+            <style>
+              .container {
+                position: relative;
+              }
+
+              h2 {
+                padding-top: 3%;
+                padding-bottom: 3%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+              }
+            </style>
+            <div class="container">
+              <h2>Add Teacher</h2>
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="fname">Firstname</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fname"
+                        placeholder="Enter Firstname"
+                        value="Ruth"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="pwd"
+                        placeholder="Enter Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">Subject</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder="Enter Subject"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="mob_no">Mobile Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="mob_no"
+                        placeholder="Enter Mobile Number"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="DOB">Birth-Date</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="DOB"
+                        placeholder="Enter BirthDate"
+                      />
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="teacher-email">Email:</label>
-                    <input type="email" class="form-control" id="teacher-email" />
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lname">Lastname</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lname"
+                        placeholder="Enter Lastname"
+                        value="C. Gault"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="joining_date">Joining Date</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="joining_date"
+                        placeholder="Enter Joining Date"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cpwd">Confirm Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="cpwd"
+                        placeholder="Confirm Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="ID">ID</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="ID"
+                        placeholder="Enter Identification"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="gender">Gender</label>
+                      <select class="form-control" id="gender">
+                        <option value="male">Male</option>
+                        <option value="male">Female</option>
+                        <option value="male">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="sub">Subject</label>
+                      <select class="form-control" id="sub">
+                        <option value="computer">Web-Dev</option>
+                        <option value="computer">Cyber-Security</option>
+                        <option value="computer">DevOps</option>
+                        <option value="computer">MERN Stack Developer</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="teacher-subject">Subject:</label>
-                    <input type="text" class="form-control" id="teacher-subject" />
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
             </div>
           </div>
           <!-- For Edit Teacher -->
           <div id="main-2-1-3" class="container-fluid">
-            <div class="card border-0">
-              <div class="card-header">
-                <h5 class="card-title">Edit Teacher</h5>
-              </div>
-              <div class="card-body">
-                <form id="edit-teacher-form">
-                  <div class="form-group">
-                    <label for="edit-teacher-name">Name:</label>
-                    <input type="text" class="form-control" id="edit-teacher-name" />
+            <style>
+              .container {
+                position: relative;
+              }
+              h2 {
+                padding-top: 3%;
+                padding-bottom: 3%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+              }
+            </style>
+            <div class="container">
+              <h2>Edit Teacher</h2>
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="fname">Firstname</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fname"
+                        placeholder="Enter Firstname"
+                        value="Ruth"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="pwd"
+                        placeholder="Enter Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">Subject</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder="Enter Subject"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="mob_no">Mobile Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="mob_no"
+                        placeholder="Enter Mobile Number"
+                      />
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="edit-teacher-email">Email:</label>
-                    <input type="email" class="form-control" id="edit-teacher-email" />
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lname">Lastname</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lname"
+                        placeholder="Enter Lastname"
+                        value="C. Gault"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="joining_date">Joining Date</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="joining_date"
+                        placeholder="Enter Joining Date"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cpwd">Confirm Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="cpwd"
+                        placeholder="Confirm Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="gender">Gender</label>
+                      <select class="form-control" id="gender">
+                        <option value="male">Male</option>
+                        <option value="male">Female</option>
+                        <option value="male">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="sub">Subject</label>
+                      <select class="form-control" id="sub">
+                        <option value="computer">Web-Dev</option>
+                        <option value="computer">Cyber-Security</option>
+                        <option value="computer">DevOps</option>
+                        <option value="computer">MERN Stack Developer</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="edit-teacher-subject">Subject:</label>
-                    <input type="text" class="form-control" id="edit-teacher-subject" />
-                  </div>
-                  <button type="submit" class="btn btn-primary">Save Changes</button>
-                </form>
-              </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
             </div>
           </div>
           <!-- For All Receptionists -->
           <div id="main-2-2-1" class="container-fluid">
-            <div class="card border-0">
-              <div class="card-header">
-                <h5 class="card-title">All Receptionists</h5>
-                <h6 class="card-subtitle text-muted">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum ducimus, necessitatibus reprehenderit itaque!
-                </h6>
+            <nav class="search-nav">
+              <input
+                class="input"
+                type="text"
+                id="teacherId"
+                placeholder="Teacher ID"
+              />
+              <input
+                class="input"
+                type="text"
+                id="teacherName"
+                placeholder="Teacher Name"
+              />
+              <select
+                class="input"
+                id="subject"
+                class="subject"
+                name="subject"
+                required
+              >
+                <option disabled selected>Select Subject</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Social">Social Studies</option>
+                <option value="English">English</option>
+                <option value="assamese">Assamese</option>
+              </select>
+              <button
+                class="input"
+                id="searchButton"
+                onclick="searchTeachers()"
+              >
+                Search
+              </button>
+            </nav>
+            <div class="all-teacher-heading">
+              <h2>All Teachers</h2>
+            </div>
+
+            <div class="all-teachers">
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
-              <div class="card-body">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody id="receptionist-table-body">
-                    <!-- Receptionist rows will be added here -->
-                  </tbody>
-                </table>
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
               </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <div class="teacher">
+                <div class="option">
+                  <button><h6>View</h6></button>
+                  <button><h6>Update</h6></button>
+                  <button><h6>Remove</h6></button>
+                </div>
+                <img
+                  src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg"
+                  alt=""
+                />
+                <h3>Teacher Name</h3>
+                <h5>Subject</h5>
+              </div>
+
+              <script>
+                function searchTeachers() {
+                  // Add your search functionality here
+                  // You can use JavaScript to handle the search based on the entered values
+                  // For example, you might want to make an AJAX request to the server for searching.
+                  // This is just a placeholder function.
+                  alert("Searching for teachers...");
+                }
+              </script>
             </div>
           </div>
           <!-- For Add Receptionist -->
           <div id="main-2-2-2" class="container-fluid">
-            <div class="card border-0">
-              <div class="card-header">
-                <h5 class="card-title">Add Receptionist</h5>
-              </div>
-              <div class="card-body">
-                <form id="add-receptionist-form">
-                  <div class="form-group">
-                    <label for="receptionist-name">Name:</label>
-                    <input type="text" class="form-control" id="receptionist-name" />
+            <div class="container">
+              <h2>Add Receptionist</h2>
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="fname">Firstname</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fname"
+                        placeholder="Enter Firstname"
+                        value=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="pwd"
+                        placeholder="Enter Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">Subject</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder="Enter Subject"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="mob_no">Mobile Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="mob_no"
+                        placeholder="Enter Mobile Number"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="DOB">Birth-Date</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="DOB"
+                        placeholder="Enter BirthDate"
+                      />
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="receptionist-email">Email:</label>
-                    <input type="email" class="form-control" id="receptionist-email" />
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lname">Lastname</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lname"
+                        placeholder="Enter Lastname"
+                        value=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="joining_date">Joining Date</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="joining_date"
+                        placeholder="Enter Joining Date"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cpwd">Confirm Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="cpwd"
+                        placeholder="Confirm Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="ID">ID</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="ID"
+                        placeholder="Enter Identification"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="gender">Gender</label>
+                      <select class="form-control" id="gender">
+                        <option value="male">Male</option>
+                        <option value="male">Female</option>
+                        <option value="male">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="sub">Centre</label>
+                      <select class="form-control" id="sub">
+                        <option value="computer">North</option>
+                        <option value="computer">South</option>
+                        <option value="computer">West</option>
+                        <option value="computer">East</option>
+                      </select>
+                    </div>
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
             </div>
           </div>
           <!-- For Edit Receptionist -->
           <div id="main-2-2-3" class="container-fluid">
-            <div class="card border-0">
-              <div class="card-header">
-                <h5 class="card-title">Edit Receptionist</h5>
-              </div>
-              <div class="card-body">
-                <form id="edit-receptionist-form">
-                  <div class="form-group">
-                    <label for="edit-receptionist-name">Name:</label>
-                    <input type="text" class="form-control" id="edit-receptionist-name" />
+            <div class="container">
+              <h2>Edit Receptionist</h2>
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="fname">Firstname</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fname"
+                        placeholder="Enter Firstname"
+                        value="Ruth"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="pwd"
+                        placeholder="Enter Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="ID-No.">Centre ID No.</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="ID-No"
+                        placeholder="Enter ID-No."
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="mob_no">Mobile Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="mob_no"
+                        placeholder="Enter Mobile Number"
+                      />
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="edit-receptionist-email">Email:</label>
-                    <input type="email" class="form-control" id="edit-receptionist-email" />
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lname">Lastname</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lname"
+                        placeholder="Enter Lastname"
+                        value="C. Gault"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="joining_date">Joining Date</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="joining_date"
+                        placeholder="Enter Joining Date"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cpwd">Confirm Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="cpwd"
+                        placeholder="Confirm Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="gender">Gender</label>
+                      <select class="form-control" id="gender">
+                        <option value="male">Male</option>
+                        <option value="male">Female</option>
+                        <option value="male">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="sub">Centre</label>
+                      <select class="form-control" id="sub">
+                        <option value="computer">North</option>
+                        <option value="computer">South</option>
+                        <option value="computer">West</option>
+                        <option value="computer">East</option>
+                      </select>
+                    </div>
                   </div>
-                  <input type="hidden" id="edit-receptionist-id" />
-                  <button type="submit" class="btn btn-primary">Save Changes</button>
-                </form>
-              </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
             </div>
           </div>
           <!-- For Notice  -->
@@ -678,18 +1985,25 @@
                 <form id="create-announcement-form">
                   <div class="form-group">
                     <label for="announcement-title">Title:</label>
-                    <input type="text" class="form-control" id="announcement-title" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="announcement-title"
+                    />
                   </div>
                   <div class="form-group">
                     <label for="announcement-content">Content:</label>
-                    <textarea class="form-control" id="announcement-content" rows="3"></textarea>
+                    <textarea
+                      class="form-control"
+                      id="announcement-content"
+                      rows="3"
+                    ></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
               </div>
             </div>
           </div>
-
         </main>
         <footer class="footer"></footer>
       </div>
