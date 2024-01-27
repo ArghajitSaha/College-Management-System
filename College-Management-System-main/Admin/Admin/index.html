@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ae360af17e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/College-Management-System-main/Teacher/all-teacher.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar" class="js-sidebar">
+        <!-- Content For Sidebar -->
+        <div
+          class="h-100"
+          style="
+            background: linear-gradient(rgb(152, 205, 255), rgb(229, 239, 250));
+          "
+        >
+          <div class="sidebar-logo">
+            <img
+              src="PNG/NIELIT_L.png"
+              class="img-fluid illustration-img"
+              alt=""
+            />
+          </div>
+          <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a id="dashboard-id" href="#" class="sidebar-link">
+                    <i class="fa-solid fa-list pe-2" id="nameic"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li id="MIS-id" class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" aria-expanded="false">
+                    <i class="fa-solid fa-file-lines pe-2" id="nameic"></i>
+                    &nbsp;MIS Report
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed" data-bs-target="#student" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="fa-solid fa-sliders pe-2" id="nameic"></i>
+                    Manage Staff
+                </a>
+                <ul id="student" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#teacher-list" data-bs-toggle="collapse" aria-expanded="false">
+                            <i class="fa-solid fa-chalkboard-user pe-2" id="nameic"></i>
+                            Teachers
+                        </a>
+                        <ul id="teacher-list" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#student">
+                            <li class="sidebar-item">
+                                <a id="all-teacher-id" href="#" class="sidebar-link" id="nameic">All Teachers</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a id="add-teacher-id" href="#" class="sidebar-link" id="nameic">Add Teacher</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a id="edit-teacher-id" href="#" class="sidebar-link" id="nameic">Edit Teacher</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#receptionist-list" data-bs-toggle="collapse" aria-expanded="false">
+                            <i class="fa-solid fa-chalkboard-user pe-2" id="nameic"></i>
+                            Receptionist
+                        </a>
+                        <ul id="receptionist-list" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#student">
+                            <li class="sidebar-item">
+                                <a id="all-receptionist-id" href="#" class="sidebar-link" id="nameic">All Receptionist</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a id="add-receptionist-id" href="#" class="sidebar-link" id="nameic">Add Receptionist</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a id="edit-receptionist-id" href="#" class="sidebar-link" id="nameic">Edit Receptionist</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        
+            <li class="sidebar-item"> 
+              <a
+                id="notice-id"
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-target="#course"
+                aria-expanded="false"
+                ><i class="fa-solid fa-sliders pe-2" id="nameic"></i>
+                Notice Control
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a id="create-announcement-id" href="#" class="sidebar-link">
+                <i class="fa-solid fa-list pe-2" id="nameic"></i>
+                Create Announcement
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+          <button class="btn" id="sidebar-toggle" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                  <img
+                    src="./PNG/profile.jpg"
+                    class="avatar img-fluid rounded"
+                    alt=""
+                  />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <a href="#" class="dropdown-item">Profile</a>
+                  <a href="#" class="dropdown-item">Setting</a>
+                  <a href="#" class="dropdown-item">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main class="content px-3 py-2">
+          <!-- For Dashboard -->
+          <div id="main-0" class="container-fluid">
+            <div class="mb-3">
+              <h4>Admin Dashboard</h4>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex">
+                <div class="card flex-fill border-0 illustration">
+                  <div class="card-body p-0 d-flex flex-fill">
+                    <div class="row g-0 w-100">
+                      <div class="col-6">
+                        <div class="p-3 m-1">
+                          <h4>Welcome Back</h4>
+                          <p class="mb-0">Name........</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 d-flex">
+                <div class="card flex-fill border-0">
+                  <div class="card-body py-4">
+                    <div class="d-flex align-items-start">
+                      <div class="flex-grow-1">
+                        <h4 class="mb-2">13</h4>
+                        <p class="mb-2">Total Teachers</p>
+                        <h4 class="mb-2">235</h4>
+                        <p class="mb-2">Total Students</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table Element -->
+            <div class="card border-0">
+              <div class="card-header">
+                <h5 class="card-title">Announcement Space</h5>
+                <h6 class="card-subtitle text-muted" style="height: 150px">
+                  This Space is for announcement!!!..........
+                </h6>
+              </div>
+            </div>
+            <!-- Table Element -->
+            <div class="card border-0">
+              <div class="card-header">
+                <h5 class="card-title">Available Teachers</h5>
+                <h6 class="card-subtitle text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum ducimus, necessitatibus reprehenderit itaque!
+                </h6>
+              </div>
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Subject</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>Math</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>English</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>Assamese</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- For MIS Report -->
+          <div id="main-1" class="container-fluid">
+
+          </div>
+          <!-- For All Teachers -->
+          <div id="main-2-1-1" class="container-fluid">
+            <nav class="search-nav">
+              <input class="input" type="text" id="teacherId" placeholder="Teacher ID">
+              <input class="input" type="text" id="teacherName" placeholder="Teacher Name">
+              <select class="input" id="subject" class="subject" name="subject" required>
+                  <option disabled selected>Select Subject</option>
+                  <option value="math">Math</option>
+                  <option value="science">Science</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Social">Social Studies</option>
+                  <option value="English">English</option>
+                  <option value="assamese">Assamese</option>
+              </select>
+              <button class="input" id="searchButton" onclick="searchTeachers()">Search</button>
+            </nav>
+            <div class="all-teacher-heading">
+                <h2>All Teachers</h2>
+            </div>
+  
+            <div class="all-teachers">
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+          
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+          
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+          
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+          
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+          
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+  
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+          
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+          
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+          
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+          
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+  
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+          
+              <div class="teacher">
+                  <div class="option">
+                      <button><h6>View</h6></button>
+                      <button><h6>Update</h6></button>
+                      <button><h6>Remove</h6></button>
+                  </div>
+                  <img src="https://thumb.ac-illust.com/dd/dd35126334fe3537ad97bfd5f5145759_t.jpeg" alt="">
+                  <h3>Teacher Name</h3>
+                  <h5>Subject</h5>
+              </div>
+  
+            <script>
+                function searchTeachers() {
+                    // Add your search functionality here
+                    // You can use JavaScript to handle the search based on the entered values
+                    // For example, you might want to make an AJAX request to the server for searching.
+                    // This is just a placeholder function.
+                    alert("Searching for teachers...");
+                }
+            </script>
+  
+            </div>
+          </div>
+            
+          <!-- For Add Teacher -->
+          <div id="main-2-1-2" class="container-fluid">
+            <div class="card border-0">
+              <div class="card-header">
+                <h5 class="card-title">Add Teacher</h5>
+              </div>
+              <div class="card-body">
+                <form id="add-teacher-form">
+                  <div class="form-group">
+                    <label for="teacher-name">Name:</label>
+                    <input type="text" class="form-control" id="teacher-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="teacher-email">Email:</label>
+                    <input type="email" class="form-control" id="teacher-email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="teacher-subject">Subject:</label>
+                    <input type="text" class="form-control" id="teacher-subject" />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- For Edit Teacher -->
+          <div id="main-2-1-3" class="container-fluid">
+            <div class="card border-0">
+              <div class="card-header">
+                <h5 class="card-title">Edit Teacher</h5>
+              </div>
+              <div class="card-body">
+                <form id="edit-teacher-form">
+                  <div class="form-group">
+                    <label for="edit-teacher-name">Name:</label>
+                    <input type="text" class="form-control" id="edit-teacher-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-teacher-email">Email:</label>
+                    <input type="email" class="form-control" id="edit-teacher-email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-teacher-subject">Subject:</label>
+                    <input type="text" class="form-control" id="edit-teacher-subject" />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- For All Receptionists -->
+          <div id="main-2-2-1" class="container-fluid">
+            <div class="card border-0">
+              <div class="card-header">
+                <h5 class="card-title">All Receptionists</h5>
+                <h6 class="card-subtitle text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum ducimus, necessitatibus reprehenderit itaque!
+                </h6>
+              </div>
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="receptionist-table-body">
+                    <!-- Receptionist rows will be added here -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- For Add Receptionist -->
+          <div id="main-2-2-2" class="container-fluid">
+            <div class="card border-0">
+              <div class="card-header">
+                <h5 class="card-title">Add Receptionist</h5>
+              </div>
+              <div class="card-body">
+                <form id="add-receptionist-form">
+                  <div class="form-group">
+                    <label for="receptionist-name">Name:</label>
+                    <input type="text" class="form-control" id="receptionist-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="receptionist-email">Email:</label>
+                    <input type="email" class="form-control" id="receptionist-email" />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- For Edit Receptionist -->
+          <div id="main-2-2-3" class="container-fluid">
+            <div class="card border-0">
+              <div class="card-header">
+                <h5 class="card-title">Edit Receptionist</h5>
+              </div>
+              <div class="card-body">
+                <form id="edit-receptionist-form">
+                  <div class="form-group">
+                    <label for="edit-receptionist-name">Name:</label>
+                    <input type="text" class="form-control" id="edit-receptionist-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-receptionist-email">Email:</label>
+                    <input type="email" class="form-control" id="edit-receptionist-email" />
+                  </div>
+                  <input type="hidden" id="edit-receptionist-id" />
+                  <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- For Notice  -->
+          <div id="main-3" class="container-fluid">
+            <div
+              class="container-fluid"
+              style="
+                background: linear-gradient(
+                  rgb(152, 205, 255),
+                  rgb(229, 239, 250)
+                );
+                height: 100vh;
+                padding: 5rem;
+              "
+            >
+              <h1 class="text-center mb-5">Notice Board</h1>
+              <div class="row">
+                <div class="col-md-4">
+                  <form id="notice-form">
+                    <div class="form-group">
+                      <label for="noticeTitle">Title:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="noticeTitle"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="noticeContent">Content:</label>
+                      <textarea
+                        class="form-control"
+                        id="noticeContent"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="stickyCheckbox"
+                      />
+                      <label class="form-check-label" for="stickyCheckbox"
+                        >Sticky notice</label
+                      >
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                    <button type="button" class="btn btn-primary edit-notice">
+                      Edit
+                    </button>
+                    <button type="button" class="btn btn-danger delete-notice">
+                      Delete
+                    </button>
+                  </form>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-container">
+                    <!-- Notice cards will be added here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              $(document).ready(function () {
+                // Add functionality to the form
+                $("#notice-form").submit(function (event) {
+                  event.preventDefault();
+
+                  // Get the current date and time
+                  let now = new Date();
+                  let date =
+                    now.getDate() +
+                    "/" +
+                    (now.getMonth() + 1) +
+                    "/" +
+                    now.getFullYear();
+                  let time = now.toLocaleTimeString();
+
+                  // Create a new notice card
+                  let noticeCard = $("<div>").addClass("card notice-card");
+                  let cardHeader = $("<div>").addClass("card-header");
+                  let cardTitle = $("<h5>")
+                    .addClass("card-title")
+                    .text($("#noticeTitle").val());
+                  let cardBody = $("<div>").addClass("card-body");
+                  let noticeContent = $("<p>")
+                    .addClass("card-text notice-content")
+                    .text($("#noticeContent").val());
+                  let publishDate = $("<p>")
+                    .addClass("card-text publish-date")
+                    .text("Published on " + date + " at " + time);
+                  let noticeActions = $("<div>")
+                    .addClass("btn-group notice-actions")
+                    .attr("role", "group")
+                    .attr("aria-label", "Notice Actions");
+                  let editButton = $("<button>")
+                    .addClass("btn btn-sm btn-primary edit-notice")
+                    .text("Edit");
+                  let deleteButton = $("<button>")
+                    .addClass("btn btn-sm btn-danger delete-notice")
+                    .text("Delete");
+
+                  // Append elements to the card
+                  cardHeader.append(cardTitle);
+                  noticeActions.append(editButton, deleteButton);
+                  cardBody.append(noticeContent, publishDate, noticeActions);
+                  noticeCard.append(cardHeader, cardBody);
+
+                  // Add the new notice to the card container
+                  $(".card-container").append(noticeCard);
+
+                  // Reset the form
+                  $("#notice-form")[0].reset();
+                });
+
+                // Handle delete notice button click
+                $(document).on("click", ".delete-notice", function () {
+                  $(this).closest(".notice-card").remove();
+                });
+
+                // Handle edit notice button click
+                $(document).on("click", ".edit-notice", function () {
+                  let cardBody = $(this).closest(".card-body");
+                  let noticeContent = cardBody.find(".notice-content").text();
+                  let noticeTitle = cardBody.prev().find(".card-title").text();
+
+                  // Populate form with existing notice details
+                  $("#noticeTitle").val(noticeTitle);
+                  $("#noticeContent").val(noticeContent);
+
+                  // Remove the notice card
+                  $(this).closest(".notice-card").remove();
+                });
+              });
+            </script>
+          </div>
+          <!-- For Create Announcements -->
+          <div id="main-4" class="container-fluid">
+            <div class="card border-0">
+              <div class="card-header">
+                <h5 class="card-title">Create Announcement</h5>
+              </div>
+              <div class="card-body">
+                <form id="create-announcement-form">
+                  <div class="form-group">
+                    <label for="announcement-title">Title:</label>
+                    <input type="text" class="form-control" id="announcement-title" />
+                  </div>
+                  <div class="form-group">
+                    <label for="announcement-content">Content:</label>
+                    <textarea class="form-control" id="announcement-content" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </main>
+        <footer class="footer"></footer>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+  </body>
+</html>

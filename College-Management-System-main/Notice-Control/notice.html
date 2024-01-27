@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notice Board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="notice.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid"
+      style="
+        background: linear-gradient(rgb(152, 205, 255), rgb(229, 239, 250));
+        height: 100vh;
+        padding: 5rem;
+      "
+    >
+      <h1 class="text-center mb-5">Notice Board</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <form id="notice-form">
+            <div class="form-group">
+              <label for="noticeTitle">Title:</label>
+              <input type="text" class="form-control" id="noticeTitle" />
+            </div>
+            <div class="form-group">
+              <label for="noticeContent">Content:</label>
+              <textarea
+                class="form-control"
+                id="noticeContent"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="stickyCheckbox"
+              />
+              <label class="form-check-label" for="stickyCheckbox"
+                >Sticky notice</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary edit-notice">
+              Edit
+            </button>
+            <button type="button" class="btn btn-danger delete-notice">
+              Delete
+            </button>
+          </form>
+        </div>
+        <div class="col-md-8">
+          <div class="card-container">
+            <!-- Notice cards will be added here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="notice.js"></script>
+  </body>
+</html>

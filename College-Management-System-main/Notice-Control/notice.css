@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card-container {
+  height: 500px;
+  overflow-y: auto;
+}
+
+.notice-card {
+  margin-bottom: 1rem;
+}
+
+.sticky-notice {
+  position: sticky;
+  top: 1rem;
+}
+
+.notice-actions {
+  margin-top: 1rem;
+}
+
+.edit-notice,
+.delete-notice {
+  margin-right: 0.5rem;
+}

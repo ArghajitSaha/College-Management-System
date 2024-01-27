@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIS Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container-fluid {
+            margin-top: 30px;
+        }
+        .my-4 {
+            font-size: 2rem;
+            color: #343a40;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .table th, .table td {
+            text-align: center;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .search-bar input[type="search"] {
+            width: 70%;
+            margin-right: 10px;
+        }
+        .dropdown-filter {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="my-4">MIS Report </h1>
+        <!-- <h1 class="my-4">Posts <small>All  | Published | Trash </small></h1> -->
+        <form>
+            <div class="search-bar">
+                <div class="dropdown dropdown-filter">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="authorFilter" data-bs-toggle="dropdown" aria-expanded="false">
+                        All dates
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="authorFilter">
+                        <li><a class="dropdown-item" href="#">Author 1</a></li>
+                        <li><a class="dropdown-item" href="#">Author 2</a></li>
+                        <!-- Add more authors as needed -->
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-filter">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryFilter" data-bs-toggle="dropdown" aria-expanded="false">
+                        Category
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="categoryFilter">
+                        <li><a class="dropdown-item" href="#">Category 1</a></li>
+                        <li><a class="dropdown-item" href="#">Category 2</a></li>
+                        <!-- Add more categories as needed -->
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-filter">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="tagFilter" data-bs-toggle="dropdown" aria-expanded="false">
+                        Actions
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="tagFilter">
+                        <li><a class="dropdown-item" href="#">Tag 1</a></li>
+                        <li><a class="dropdown-item" href="#">Tag 2</a></li>
+                        <!-- Add more tags as needed -->
+                    </ul>
+                </div>
+                <input type="search" class="form-control" id="search-posts" placeholder="Search Posts">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label for="" class="form-check-label"></label>
+                            </div>
+                        </th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Categories</th>
+                        <th>Tags</th>
+                        <th>Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample data rows, add more as needed -->
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label for="" class="form-check-label"></label>
+                            </div>
+                        </td>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#" style="text-decoration: none; color: #007bff;">Simple Article</a></td>
+                        <td>Admin User</td>
+                        <td>Uncategorized</td>
+                        <td>B</td>
+                        <td>1 min ago</td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Actions
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Quick Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Trash</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

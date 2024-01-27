@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  padding: 1%;
+}
+
+.search-nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 100%;
+  max-width: 400px;
+  height: 8vh;
+  padding: 0 8px;
+  box-sizing: border-box;
+  background-color: #feffff;
+  border: 0.1rem solid #cecccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.input:hover {
+  background-color: #ccf3ff;
+}
+
+#searchButton {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 15px;
+  background-color: #0d6cfd;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#searchButton:active {
+  background-color: #458fff;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.about-teacher-heading {
+  height: 6vh;
+  width: 100%;
+  margin-top: 1.5vh;
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  border: 0.1rem solid #cecccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.teacher-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5vh;
+}
+
+.basic-details {
+  width: 100%;
+  max-width: 100%; /* Adjust as needed */
+  margin-top: 1.5vh;
+}
+
+.detail-1 {
+  height: auto;
+  width: 100%;
+  max-width: 100%; /* Adjust as needed */
+  text-align: center;
+  padding: 3vh;
+  border: 0.1rem solid #cecccc;
+  border-radius: 5px;
+}
+
+.detail-1 .profile-pic {
+  height: 30vh;
+  width: 30vh;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #5699fd;
+  margin-bottom: 1vh;
+}
+
+.detail-2,
+.detail-3,
+.full-details {
+  width: 100%;
+  max-width: 100%; /* Adjust as needed */
+  margin-top: 1.5vh;
+  padding: 3vh;
+  border: 0.1rem solid #cecccc;
+  border-radius: 5px;
+}
+
+.detail-2 h3,
+.detail-3 h3,
+.full-details h3 {
+  margin-bottom: 1vh;
+}
+
+.detail-2 .more,
+.detail-3 p,
+.full-details .connect,
+.full-details .describe,
+.full-details .education p,
+.full-details .experience p {
+  margin-top: 1vh;
+}
+
+.full-details .connect div {
+  width: 100%;
+  max-width: 15vw;
+  height: 7vh;
+  margin-top: 3vh;
+  background-color: rgba(0, 0, 0, 0.101);
+  border-radius: 5px;
+}
+
+.full-details .connect div h5 {
+  margin-top: 1vh;
+}
+
+.full-details .describe {
+  margin-top: 8vh;
+}
+
+.full-details .describe p {
+  margin-top: 2vh;
+}
+
+.full-details .education,
+.full-details .experience {
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+}
+
+.full-details .education p,
+.full-details .experience p {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+
+
+
+/* ... (existing CSS rules) */
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .input,
+  #searchButton,
+  .about-teacher-heading,
+  .basic-details,
+  .detail-1,
+  .detail-2,
+  .detail-3,
+  .full-details,
+  .detail-2 .more,
+  .full-details .connect div {
+    max-width: none;
+    width: 100%;
+  }
+
+  .input,
+  #searchButton {
+    width: 100%;
+  }
+
+  .teacher-details {
+    gap: 1vh;
+  }
+
+  .detail-1 .profile-pic {
+    height: 20vh;
+    width: 20vh;
+  }
+
+  .full-details .connect div {
+    max-width: none;
+  }
+}
+
+/* Responsive adjustments for even smaller screens */
+@media screen and (max-width: 480px) {
+  .teacher-details {
+    gap: 0.5vh;
+  }
+
+  .input,
+  #searchButton,
+  .about-teacher-heading,
+  .basic-details,
+  .detail-1,
+  .detail-2,
+  .detail-3,
+  .full-details,
+  .detail-2 .more,
+  .full-details .connect div {
+    padding: 2%;
+  }
+
+  .detail-1 .profile-pic {
+    height: 15vh;
+    width: 15vh;
+  }
+}
+
+/* iPhone 4/4S */
+@media only screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2) {
+  .all-teachers {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+}
+
+/* iPhone 6/7/8 */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .all-teachers {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+  }
+}
+
+/* iPhone 6/7/8 Plus */
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  .all-teachers {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+}
+
+/* iPhone X/11/12/13 */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .all-teachers {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+}
+
+/* iPhone XR/11/11 Pro Max */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .all-teachers {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 14px;
+  }
+}
+
+/* Landscape tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .all-teachers {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+  }
+}
+
+/* Common Android screen sizes */
+@media only screen and (max-width: 320px) {
+  .all-teachers {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .all-teachers {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .all-teachers {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+  }
+}
+
+/* ... (additional Android media queries as needed) */
+
+/* ... (any additional media queries as needed) */
