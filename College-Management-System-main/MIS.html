@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIS-report</title>
+    <link rel="stylesheet" href="MIS.css" />
+  </head>
+  <body>
+    <div class="filter">
+      <!-- Month Input -->
+      <div class="month">
+        <label for="month"><h4>Select Month:</h4> <br /></label>
+        <select id="monthDropdown">
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      </div>
+      <!-- Year Input -->
+      <div class="year">
+        <label for="year"><h4>Select Year:</h4> <br /></label>
+        <select id="yearDropdown">
+          <!-- JavaScript will populate this dropdown -->
+        </select>
+      </div>
+      <!-- Courses Inputs -->
+      <div class="course">
+        <label for="course"><h4>Select Course:</h4> <br /></label>
+        <select id="courseDropdown">
+          <!-- All Courses -->
+          <option value="bca">BCA</option>
+          <option value="mca">MCA</option>
+          <option value="pgdca">PGDCA</option>
+          <!-- Add more courses here -->
+        </select>
+      </div>
+      <!-- Project Inputs -->
+      <div class="project">
+        <label for="project"><h4>Select Project:</h4> <br /></label>
+        <select id="projectDropdown">
+          <!-- All Projects -->
+          <option value="1">Project 1</option>
+          <option value="2">Project 2</option>
+          <option value="3">Project 3</option>
+          <option value="4">Project 4</option>
+          <option value="5">Project 5</option>
+          <option value="6">Project 6</option>
+          <!-- Add more projects here -->
+        </select>
+      </div>
+
+      <div class="search">
+        <br />
+        <button><h4>Search</h4></button>
+      </div>
+    </div>
+<div class="tableCont">
+    <table #table border="2" >
+      <tr>
+          <th rowspan="2"><h4>Sl. No.</h4></th>
+          <th rowspan="2"><h4>Course</h4></th>
+          <th rowspan="2"><h4>Project</h4></th>
+          <th colspan="2"><h4>SC</h4></th>
+          <th colspan="2"><h4>ST</h4></th>
+          <th colspan="2"><h4>OBC</h4></th>
+          <th colspan="2"><h4>GEN</h4></th>
+          <th colspan="2"><h4>Other</h4></th>
+          <th colspan="2"><h4>Sub Total</h4></th>
+          <th rowspan="2"><h4>Total</h4></th>
+          <th rowspan="2"><h4>Action</h4></th>
+      </tr>
+      <tr>
+          <th><h5>Male</h5></th><th><h5>Female</h5></th>
+          <th><h5>Male</h5></th><th><h5>Female</h5></th>
+          <th><h5>Male</h5></th><th><h5>Female</h5></th>
+          <th><h5>Male</h5></th><th><h5>Female</h5></th>
+          <th><h5>Male</h5></th><th><h5>Female</h5></th>
+          <th><h5>Male</h5></th><th><h5>Female</h5></th>
+      </tr>
+      <!-- BCA Data -->
+      <tr class="for_bca">
+          <td class="sl_no">1.</td>
+          <td class="course">BCA</td>
+          <td class="project">No. of Projects</td>
+          <td class="sc_male">10</td>
+          <td class="sc_female">10</td>
+          <td class="st_male">7</td>
+          <td class="st_female">3</td>
+          <td class="obc_male">4</td>
+          <td class="obc_female">6</td>
+          <td class="gen_male">7</td>
+          <td class="gen_femala">4</td>
+          <td class="other_male">3</td>
+          <td class="other_female">7</td>
+          <td class="bca_total_male" id="bca_total_male"></td>
+          <td class="bca_total_female" id="bca_total_female"></td>
+          <td class="total" id="total"></td>
+          <td class="download_bca_data"><h6><a href="javascript:void(0);" onclick="openDownloadModal('bca')">Download</a></h6></td>
+          
+      </tr>
+      <!-- MCA Data -->
+      <tr class="for_mca">
+        <td class="sl_no">2.</td>
+        <td class="course">MCA</td>
+        <td class="project">No. of Projects</td>
+        <td class="sc_male">5</td>
+        <td class="sc_female">6</td>
+        <td class="st_male">6</td>
+        <td class="st_female">7</td>
+        <td class="obc_male">6</td>
+        <td class="obc_female">2</td>
+        <td class="gen_male">5</td>
+        <td class="gen_femala">9</td>
+        <td class="other_male">9</td>
+        <td class="other_female">3</td>
+        <td class="mca_total_male" id="mca_total_male"></td>
+        <td class="mca_total_female" id="mca_total_female"></td>
+        <td class="mca_total" id="mca_total"></td>
+        <td class="Download_mca_data"><h6><a href="javascript:void(0);" onclick="openDownloadModal('mca')">Download</a></h6></td>
+    </tr>
+
+
+    <!-- PGDCA Data -->
+<tr class="for_pgdca">
+  <td class="sl_no">3.</td>
+  <td class="course">PGDCA</td>
+  <td class="project">No. of Projects</td>
+  <td class="sc_male">7</td>
+  <td class="sc_female">2</td>
+  <td class="st_male">9</td>
+  <td class="st_female">4</td>
+  <td class="obc_male">4</td>
+  <td class="obc_female">8</td>
+  <td class="gen_male">9</td>
+  <td class="gen_female">5</td>
+  <td class="other_male">4</td>
+  <td class="other_female">8</td>
+  <td class="pgdca_total_male" id="pgdca_total_male"></td>
+  <td class="pgdca_total_female" id="pgdca_total_female"></td>
+  <td class="pgdca_total" id="pgdca_total"></td>
+  <td class="Download_pgdca_data"><h6><a href="javascript:void(0);" onclick="openDownloadModal('pgdca')">Download</a></h6></td>
+</tr>
+
+  </table>
+</div>
+
+
+
+  <!-- Modal for download options -->
+  <div id="downloadModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeDownloadModal()">&times;</span>
+        <p>Select the format for download:</p>
+        <button onclick="downloadData('pdf')">Download as PDF</button>
+        <button onclick="downloadData('xls')">Download as XLS</button>
+    </div>
+</div>
+  
+  </body>
+  <script src="MIS.js"></script>
+</html>
